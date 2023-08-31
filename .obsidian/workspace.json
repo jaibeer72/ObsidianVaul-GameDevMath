@@ -157,14 +157,21 @@
               "type": "code-execute-manage-executors",
               "state": {}
             }
+          },
+          {
+            "id": "89810a410a6ad9cc",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
