@@ -1,0 +1,3 @@
+[submodule "VulkanGFX.wiki"]
+	path = VulkanGFX.wiki
+	url = https://github.com/jaibeer72/VulkanGFX.wiki.git

@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "f1de1fe34a294405",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d8a3ea793855776",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de6863ff1e9b4540",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DS ALgos/Modular Arithmetic..md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0ef52dde9728849",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "90e17d9a6ab84d45",
+    "type": "split",
+    "children": [
+      {
+        "id": "9abc53800923122e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bb92d30eac2a738",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d74d0b75c62153c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3d90df43524340a9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a07c23e02fa52c5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "97c0aa4ef639acf6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95d789cb0dbd981b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "40455133017b05cd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4f5814ab024bc01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "565ebedd64f6e434",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "UnrealEngine/WaveFunction Collaps.md"
+              }
+            }
+          },
+          {
+            "id": "573c7b18f88092cf",
+            "type": "leaf",
+            "state": {
+              "type": "toggl-report",
+              "state": {}
+            }
+          },
+          {
+            "id": "7a6a6bddc31c780c",
+            "type": "leaf",
+            "state": {
+              "type": "code-execute-manage-executors",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0bb92d30eac2a738",
+  "lastOpenFiles": [
+    "VulkanGFX.wiki/Home.md",
+    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+    "VulkanGFX.wiki",
+    "DS ALgos/Modular Arithmetic..md",
+    "UnrealEngine/WaveFunction Collaps.md",
+    "UnrealEngine",
+    "VulkanDev/VulkanGFX.wiki/Home.md",
+    "VulkanDev/VulkanGFX.wiki/Dev-Log-Home.md",
+    "1.md",
+    "VulkanDev/VulkanGFX.wiki/1 - Instance and physical device selection.md",
+    "DS ALgos/Bit-Manipulation.md",
+    "VulkanDev/VulkanGFX.wiki",
+    "DS ALgos",
+    "GameMath",
+    "VulkanDev",
+    "DS ALgos/Subsequence and sub-sets.md",
+    "DS ALgos/Subsequence_and_Subsets.pdf",
+    "GameMath/Vectors & Dot Product • Math for Game Devs.md",
+    "Untitled.canvas",
+    "2023-07-10.md"
+  ]
+}
