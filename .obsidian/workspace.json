@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS ALgos/Modular Arithmetic..md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0ef52dde9728849",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UnrealEngine/WaveFunction Collaps.md",
+                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UnrealEngine/WaveFunction Collaps.md"
+                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md"
               }
             }
           },
@@ -183,14 +170,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0ef52dde9728849",
+  "active": "de6863ff1e9b4540",
   "lastOpenFiles": [
+    "UnrealEngine/WaveFunction Collaps.md",
     "DS ALgos/Modular Arithmetic..md",
-    "UnrealEngine/BasicGames",
     "VulkanGFX.wiki/Home.md",
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "VulkanGFX.wiki",
-    "UnrealEngine/WaveFunction Collaps.md",
     "UnrealEngine",
     "VulkanDev/VulkanGFX.wiki/Home.md",
     "VulkanDev/VulkanGFX.wiki/Dev-Log-Home.md",
