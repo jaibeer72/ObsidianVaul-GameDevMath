@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de6863ff1e9b4540",
+            "id": "11ce6ea43e757207",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+                "file": "Unity Car Game/Unity Car Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#gameSetup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+                "file": "Unity Car Game/Unity Car Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+                "file": "Unity Car Game/Unity Car Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VulkanGFX.wiki/1 - Instance and physical device selection.md"
+                "file": "Unity Car Game/Unity Car Game.md"
               }
             }
           },
@@ -170,12 +170,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de6863ff1e9b4540",
+  "active": "11ce6ea43e757207",
   "lastOpenFiles": [
+    "Screenshot 2023-09-06 at 19.21.34.png",
+    "().md",
+    "Nav.md",
+    "Unity Car Game/Unity Car Game.md",
+    "Unity Car Game/NavMesh.md",
+    "Unity Car Game/Game Setup.md",
+    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+    "Unity Car Game",
     "UnrealEngine/WaveFunction Collaps.md",
     "DS ALgos/Modular Arithmetic..md",
     "VulkanGFX.wiki/Home.md",
-    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "VulkanGFX.wiki",
     "UnrealEngine",
     "VulkanDev/VulkanGFX.wiki/Home.md",
