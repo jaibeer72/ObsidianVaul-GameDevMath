@@ -18,4 +18,31 @@ Lastly, setting up the MainCamera to a viable position for gameplay. I like the 
 
 
 ![[Screenshot 2023-09-06 at 19.21.34.png]]
-this is the base of what the end product looks like but the idea is similar
+This is the base of what the end product looks like but the idea is similar. 
+Once the setup was done i knew the main model i wanted to push for. 
+
+## NavMesh And Player Inputs 
+
+So when I came to this I wanted it to be as extendable as possible. If needed later we could also shift to the new input system if needed. 
+
+So the criteria for controlling the players and the AI was 
+- Isolated Independent systems 
+- Singular functionality. 
+- Independently testable 
+- Debuggable. 
+
+so to start of as I did want to make this fast to be developed I decided to use NavMeh and unities inbuilt systems to get it up and running fast. 
+
+Things we knew we had to do for the player 
+- set up the navmesh 
+- get the world point from the screen point 
+- set the AI's destination. 
+- Set up the Rigidbody to make sure we can run them individually. 
+
+So first i needed an input manager sort of class. Initially i was making it so to change waypoints so this class can listen to inputs later. If or when we get the new input systems. 
+
+The overarching design of the Game I wanted to make it so that we can 
+
+``
+
+
