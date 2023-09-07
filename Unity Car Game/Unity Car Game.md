@@ -546,3 +546,7 @@ But what if we want to know if something has changed?
 ```
 
 
+so making so we don't need much more to worry about in terms of data integrity. it's easy to maintain and now we can also see it change live at one place. 
+![[Screenshot 2023-09-07 at 13.28.31.png]]
+
+Now we can easily 
