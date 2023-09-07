@@ -666,6 +666,7 @@ Now we need to make it so that we can easily add Views. I wanted to do this in t
 for this first let's create an attribute
 
 ### UIAttribute 
+#unityAttributes #attributes
 
 ```Csharp 
 public static class UIViewRegistry
@@ -690,4 +691,160 @@ public class UIViewAttribute : Attribute
 ```
 
 we have a static registry to have a single instance of it that can be accessed where necessary. 
-we will use a dictionary cause ... Amortized O(n) 
+we will use a dictionary cause ... Amortized O(1) accesses it pretty good during runtime so we can leave room for other things.  We can make it also so that the dictiornay is created on compile time so at runtime it's not much of an issue. 
+
+let's make it so that the dictionary is created in the editor. 
+for now! let's find it in all assemblies in the app domain. We can later constrict it to UI app domain by making it an assemby file for the Assets/UI folder after we namespace it and 
+```Csharp 
+
+// now we can in editor just add the Views 
+[InitializeOnLoad]
+public class UIViewRegistryEditor
+{
+    static UIViewRegistryEditor()
+    {
+        RegisterAllViews();
+    }
+
+    [MenuItem("Tools/Register All Views")]
+    private static void RegisterAllViews()
+    {
+        UIViewRegistry.ViewDictionary.Clear();
+
+        foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+        {
+            foreach (var type in assembly.GetTypes())
+            {
+                var attributes = type.GetCustomAttributes(typeof(UIViewAttribute), true);
+                foreach (UIViewAttribute attribute in attributes)
+                {
+                    if (!UIViewRegistry.ViewDictionary.ContainsKey(attribute.ViewName))
+                    {
+                        UIViewRegistry.ViewDictionary.Add(attribute.ViewName, (type, attribute.UXMLFilePath));
+                    }
+                    else
+                    {
+                        Debug.LogWarning("View with name " + attribute.ViewName + " is already registered.");
+                    }
+
+                }
+            }
+        }
+
+        Debug.Log("All views registered.");
+    }
+}
+```
+
+this gives us every time we save it can load it all but also now we can also do it manually 
+![[Screenshot 2023-09-07 at 14.13.48.png]]
+
+now we can write the UIVIew that will be our base class that will be our monobehivior attachment for each view 
+
+```Csharp 
+public class UIView : MonoBehaviour
+{
+    protected VisualElement RootVisualElement { get; private set; }
+    // Wied dependency injection .. why not do it via constructor cause i suck
+    public void InitializeView(VisualElement rootVisualElement)
+    {
+        this.RootVisualElement = rootVisualElement;
+        OnViewInitialized();
+    }
+
+    protected virtual void OnViewInitialized()
+    {
+        // Can be overridden by subclasses to perform initialization when the view is initialized with the rootVisualElement
+    }
+}
+```
+
+### UI controller there was an attempt to make things asynchronous
+
+so this is how we initialize and assign UIView and The UXML to get and load resources 
+
+so we load up addressables 
+
+```Csharp 
+private async Task InitializeUIAsync()
+    {
+        // Your async code here. For example:
+        await ChangeViewAsync(FirstUIView);
+    }
+
+    private async Task ChangeViewAsync(string viewKey)
+    {
+        if (UIViewRegistry.ViewDictionary.TryGetValue(viewKey, out var viewData))
+        {
+            var rootElement = UIDocument.rootVisualElement;
+            rootElement.Clear();
+            UIView[] views = gameObject.GetComponents<UIView>();
+            foreach (var view in views)
+            {
+                Destroy(view);
+            }
+
+            // Load the UXML asset asynchronously using Addressables
+            var uxmlAssetLoadOperation = Addressables.LoadAssetAsync<VisualTreeAsset>(viewData.uxmlFilePath);
+            VisualTreeAsset uxmlAsset = await uxmlAssetLoadOperation.Task;
+
+            if (uxmlAsset != null)
+            {
+                var visualTree = uxmlAsset.CloneTree();
+                rootElement.Add(visualTree);
+
+                
+
+                // Instantiate the view script 
+                UIView newView = (UIView)gameObject.AddComponent(viewData.viewType);
+                // Dependency Injection 
+                newView.InitializeView(rootElement);
+            }
+            else
+            {
+                Debug.LogError("Failed to load UXML asset: " + viewData.uxmlFilePath);
+            }
+        }
+    }
+```
+
+### Had to highlight 
+```Csharp 
+   // mini dependency injection on initializer 
+    newView.InitializeView(rootElement);
+```
+
+
+### finally 
+we have 
+- Models using Scriptable Objects. 
+- Views using UXML and USS. 
+- Controllers using attributes UIView components. 
+
+putting it together let's look at the HUD controller 
+
+firstly let's make it a 
+```Csharp 
+// attribute to the UIView Class to tell the UIDocument which View to import 
+[UIView("HUD", "Assets/UI/Views/HUD/HUD.uxml", typeof(HUDview))]
+// IObservers to say this class will be overserving data from certain models.
+public class HUDview : UIView, IObserver<PlayerStats>, IObserver<GameConfigData>
+{
+	// Declaring models Subscribers and Unsubscribers.
+	public PlayerStatsData playerStatsData_Model = null;
+    private IDisposable unsubscriberPlayerData;
+    public GameConfig gameConfig_Model = null;
+    private IDisposable unsubscriberGameConfig;
+    // ... 
+    // to access the root component from the UIDocument
+    protected override void OnViewInitialized()
+    {
+	    base.OnViewInitialized();
+	    // Getting the model from the object... we can make it more extendable later 
+	    playerStatsData_Model = Addressables.LoadAssetAsync<PlayerStatsData>("Assets/Data/PlayerStatsData.asset").WaitForCompletion();
+        unsubscriberPlayerData = playerStatsData_Model.Subscribe(this);
+        Debug.Log("Helth: " + playerStatsData_Model.stats.Health);
+    }
+
+}
+```
