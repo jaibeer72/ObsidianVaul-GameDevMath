@@ -549,4 +549,145 @@ But what if we want to know if something has changed?
 so making so we don't need much more to worry about in terms of data integrity. it's easy to maintain and now we can also see it change live at one place. 
 ![[Screenshot 2023-09-07 at 13.28.31.png]]
 
-Now we can easily 
+Now we can easily keep track of and also maintain a configuration. 
+
+NOW! We are going to my favourite part of the whole project
+
+# UI MVP is a designer-friendly approach.
+
+## Goals of this module 
+- Easy for UI/UX designers to make upgrades and manage UI without any problem 
+- A Controller to control the buttons and view 
+- Easy access to data and simple to add and remove and test the UI without playing the whole game. 
+
+How did we accomplish that ? 
+
+firstly a separate scene 
+![[Screenshot 2023-09-07 at 13.56.19.png]]
+that will only have the UI document. 
+
+We will be using Unity's UXML UI builder so we can easily use CSS and Other Components 
+
+![[Screenshot 2023-09-07 at 13.57.25.png]]
+Flexible UI that can is based on flex containers making it easy to work with different components. 
+
+and customizable components to make things work so we can add set remove and even access components. 
+
+like! we can extend the Progress bar to create a HealthBar component like this 
+```Csharp 
+// See Assets/UI/Componenets/HealthBarComponent.cs 
+public class HealthBarComponent : ProgressBar
+{
+    private VisualElement m_FillVE;
+    private void SetBackgrounColort(float value)
+    {
+        
+        m_FillVE = this.Q<VisualElement>(className: "unity-progress-bar__progress");
+
+        if (m_FillVE == null)
+            return;
+
+        float r = (value - lowValue) / (highValue - lowValue);
+
+        if (r <= 0.3f)
+        {
+            m_FillVE.style.backgroundColor = m_LowColor;
+        }
+        else if (r <= 0.6f)
+        {
+            m_FillVE.style.backgroundColor = m_MediumColor;
+        }
+        else
+        {
+            m_FillVE.style.backgroundColor = m_HighColor;
+        }
+    }
+
+    private Color m_LowColor; 
+    public Color lowColor {
+        get { return m_LowColor; }
+        set { m_LowColor = value; }
+    }
+
+    private Color m_MediumColor;
+    public Color mediumColor
+    {
+        get { return m_MediumColor; }
+        set { m_MediumColor = value; }
+    }
+
+    private Color m_HighColor;
+    public Color highColor
+    {
+        get { return m_HighColor; }
+        set { m_HighColor = value; }
+    }
+
+    public override float value
+    {
+        get { return base.value; }
+        set
+        {
+            base.value = value;
+            SetBackgrounColort(value);
+        }
+    }
+
+    public new class UxmlFactory : UxmlFactory<HealthBarComponent, UxmlTraits> { }
+    public new class UxmlTraits : ProgressBar.UxmlTraits
+    {
+        UxmlColorAttributeDescription m_lowColor = new UxmlColorAttributeDescription { name = "low-color" };
+        UxmlColorAttributeDescription m_MediumColor = new UxmlColorAttributeDescription { name = "mid-color" };
+        UxmlColorAttributeDescription m_HighColor = new UxmlColorAttributeDescription { name = "high-color" };
+
+        public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
+        {
+            base.Init(ve, bag, cc);
+            HealthBarComponent healthBar = (HealthBarComponent)ve;
+            healthBar.lowColor = m_lowColor.GetValueFromBag(bag, cc);
+            healthBar.mediumColor = m_MediumColor.GetValueFromBag(bag, cc);
+            healthBar.highColor = m_HighColor.GetValueFromBag(bag, cc);
+        }
+    }
+}
+```
+
+The above allows us to set the progress bar's value based on the value to change and this is not editable on the UI builder as well. 
+![[Screenshot 2023-09-07 at 14.01.42.png]]
+with now the ability to add different colours. 
+
+## Now for the actual code design. 
+for UI one of the best design patterns is the Model View Controller. 
+
+we already have the ability to create models based on scriptable objects. using Observables. 
+
+Now we need to make it so that we can easily add Views. I wanted to do this in the editor. So that the we don't need to add more and more assets to the UIDocument during compile time but we can get it on run time acyncronisly. 
+
+for this first let's create an attribute
+
+### UIAttribute 
+
+```Csharp 
+public static class UIViewRegistry
+{
+    public static Dictionary<string, (Type viewType, string uxmlFilePath)> ViewDictionary = new Dictionary<string, (Type, string)>();
+}
+
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+public class UIViewAttribute : Attribute
+{
+    public string ViewName { get; private set; }
+    public string UXMLFilePath { get; private set; }
+    public Type ViewType { get; private set; }
+    public UIViewAttribute(string viewName, string uxmlFilePath, Type viewType)
+    {
+        ViewName = viewName;
+        UXMLFilePath = uxmlFilePath;
+        ViewType = viewType;
+        UIViewRegistry.ViewDictionary.Add(viewName, (viewType, uxmlFilePath));
+    }
+}
+```
+
+we have a static registry to have a single instance of it that can be accessed where necessary. 
+we will use a dictionary cause ... Amortized O(n) 
