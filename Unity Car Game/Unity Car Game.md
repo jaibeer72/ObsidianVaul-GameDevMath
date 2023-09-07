@@ -5,7 +5,7 @@
 - Object pooling for AI and Collectables 
 - Event-based Explosion spanning 
 - Data-Driven Player Stats and Game Configuration 
-- UI MVP closeness is a designer-friendly approach.
+- UI MVP is a designer-friendly approach.
 - Scene Composition to easily add or subtract 
 
 
@@ -447,3 +447,102 @@ While I worked for Just Dance we had a lot of Player Stats we needed to deal wit
 Now, While I was working on a personal project and a master's project i was doing a lot of full-stack web dev. I have worked with View.js , React.js and currently SvelteKit. There i learnt state-based data management. Where there is a data provider and the data users are notified if the state of the data has changed making sure there is only a single reference of the data but multiple subscribers. 
 
 Also! the most important thing React is hell to work with and just generally is just... I got more done in svelte in 1 day than I could get done in react in a week. Yes, i wanted to take a dig at javascript and React while I was here. 
+
+so! we can have 
+- Singular data. 
+- Notifiers 
+- Data subscribers. 
+
+Also! for now we are only doing player stats now  we are about to come to the player stats which 
+
+```Csharp
+// ScriptableObjects/PlayerStatsData.cs
+[CreateAssetMenu(fileName = "PlayerStatsData", menuName = "ScriptableObjects/PlayerStatsData")]
+public class PlayerStatsData : ScriptableObject, IObservable<PlayerStats>
+{
+    public PlayerStats stats;
+    private List<IObserver<PlayerStats>> observers = new List<IObserver<PlayerStats>>();
+    public IDisposable Subscribe(IObserver<PlayerStats> observer)
+    {
+        if (!observers.Contains(observer))
+        {
+            observers.Add(observer);
+        }
+        return new Unsubscriber<PlayerStats>(observers, observer);
+    }
+
+    public void Notify(PlayerStats stats)
+    {
+        foreach (var observer in observers)
+        {
+            observer.OnNext(stats);
+        }
+    }
+
+    public void ResetDataForObservable()
+    {
+        stats.Reset();
+    }
+
+    private class Unsubscriber<PlayerStats> : IDisposable
+    {
+        private List<IObserver<PlayerStats>> _observers;
+        private IObserver<PlayerStats> _observer;
+
+        public Unsubscriber(List<IObserver<PlayerStats>> observers, IObserver<PlayerStats> observer)
+        {
+            this._observers = observers;
+            this._observer = observer;
+        }
+
+        public void Dispose()
+        {
+            if (_observer != null && _observers.Contains(_observer))
+                _observers.Remove(_observer);
+        }
+    }
+}
+
+```
+
+Thank god for the availability of the IObservervable so this was ... not that bad to write also it has an IObserver as well but for now 
+
+Now we have a way to access and manipulate the data. 
+```Csharp
+     // Attaching the Scriptable Object as a model to a script 
+     // See AI/AI_Agent.cs 
+    [SerializeField]
+    public PlayerStatsData playerStatsData_Model;
+    // then Manipulate or access the data as needed 
+    playerStatsData_Model.stats.Health += Impact_Health;
+    playerStatsData_Model.stats.Score += Impact_Score;
+    playerStatsData_Model.stats.Level += Impact_Level;
+    playerStatsData_Model.stats.Money += Impact_Money;
+    // Manipulate the data and Notify the changes. 
+    playerStatsData_Model.Notify(playerStatsData_Model.stats);
+
+```
+But what if we want to know if something has changed? 
+```Csharp 
+    // See Scripts/UI/Views/HUDView.cs
+     // we can mark a class as an IObserver 
+	public class HUDview : UIView, IObserver<PlayerStats>, IObserver<GameConfigData>{
+	
+	// getting the value from 
+	public void OnNext(PlayerStats value)
+    {
+        Debug.Log("Helth: " + value.Health);
+        healthBarComponent.value = value.Health;
+        if(value.Health <= 0)
+        {
+            GameEvents.GameOver.Invoke();
+            UIEvents.SceneRemoveEvent.Invoke("GameActors",OnGameLossScreenRemoves);
+        }
+        MoneyLable.text = GetMoneyString_Ink(value.Money);
+        
+    }
+	
+	}
+```
+
+
