@@ -403,8 +403,47 @@ also! I knew that Y value wouldn't change for now, so I just decided to make it 
     }
 ```
 
-Don't know why I like counters so much. But explicit counters in base-level code do not have magic numbers is something I like. Now we add some particles and some pa
+Don't know why I like counters so much. But explicit counters in base-level code do not have magic numbers is something I like. Now we add some particles and some particals and 
+![[Screenshot 2023-09-07 at 12.47.43.png]]
 
+I gave money  different colours based on how much money they give you cause... I could not find the real textures in the pack so i thought I'll make do. 
 # Event-based Explosion spanning 
 
+ALL RIGHT ! NOW TO GET THE PART I WAS worried about. I don't want to really expand the AI_Agent class making it do 5 different things making it Less SOLID. So this will be .. 
 
+![[Screenshot 2023-09-07 at 12.50.48.png]]
+Apparently easier than I thought.  I just had to import Unity's particle pack and set it to destroy after done playing. 
+
+```Csharp 
+// This is a bad name .. why did I name it this? 
+public class AnimationsController : MonoBehaviour
+{
+    public GameObject ExplosionPrefab;
+
+    private void Start()
+    {
+        AIEvents.DespwnAI.AddListener(OnAIDespwan);
+    }
+
+    private void OnAIDespwan(GameObject arg0)
+    {
+        // instantiate the explosation get the play the explosion and then
+        GameObject explosion = Instantiate(ExplosionPrefab, arg0.transform.position, Quaternion.identity);
+        ParticleSystem system = explosion.GetComponent<ParticleSystem>();
+        system.Play();
+    }
+}
+```
+
+Turns out the event-based system was a good idea cause now i could make every system Modular and make it possible to get everything running.
+
+# Data-Driven Player Stats and Game Configuration 
+Now! what I usually hate is the inability to have control over information and see who or where can a variable change. 
+
+While I worked for Just Dance we had a lot of Player Stats we needed to deal with we needed to further make things more and more modular and base it on a Scriptable Object that stored everything and made it easy to save but! now i want to implement my favourite way to access data.
+
+## Observables Scriptable Objects 
+
+Now, While I was working on a personal project and a master's project i was doing a lot of full-stack web dev. I have worked with View.js , React.js and currently SvelteKit. There i learnt state-based data management. Where there is a data provider and the data users are notified if the state of the data has changed making sure there is only a single reference of the data but multiple subscribers. 
+
+Also! the most important thing React is hell to work with and just generally is just... I got more done in svelte in 1 day than I could get done in react in a week. Yes, i wanted to take a dig at javascript and React while I was here. 
