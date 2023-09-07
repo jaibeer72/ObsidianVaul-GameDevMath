@@ -1,8 +1,7 @@
 # Introduction  The car game assignment was made to test my abilities to make things work. This summary will be divided into Features Below. 
 
 - Game Setup
-- NavMesh And Player Inputs 
-- Event-Driven Programming 
+- NavMesh And Player Inputs (with event-driven programming)
 - Object pooling for AI and Collectables 
 - Event-based Explosion spanning 
 - Data-Driven Player Stats and Game Configuration 
@@ -22,6 +21,8 @@ This is the base of what the end product looks like but the idea is similar.
 Once the setup was done i knew the main model i wanted to push for. 
 
 ## NavMesh And Player Inputs 
+
+### Discussing Events System
 
 So when I came to this I wanted it to be as extendable as possible. If needed later we could also shift to the new input system if needed. 
 
@@ -101,6 +102,7 @@ in the end of the day, events are basically loops that can be invoked at anytime
 
 In my experience, this has not yet happened as event listeners do not usually exceed a number. Also, if things are clearly labelled 
 
+### Controlling the player
 hence we came up with this Events system where we have different events based on different event classes. 
 
 ```Csharp
@@ -119,7 +121,9 @@ In the new InputSystem this means that we can more easily change this code by re
 
 The current version is on the old input systems. 
 
+
 ```Csharp
+// WaypointManager.cd 
 if(Input.GetMouseButtonDown(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -134,4 +138,65 @@ if(Input.GetMouseButtonDown(0))
             }
         }
 ```
+We have not isolated this code and it can be encapsulated by the new input system without having to do drastic refactoring 
 
+On the player controller side, we have 
+```Csharp 
+// PlayerController.cs 
+public class PlayerController : MonoBehaviour
+{
+    public NavMeshAgent agent;
+    [SerializeField]
+    public PlayerStatsData playerStatsData_Model;
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Assert(playerStatsData_Model != null, "PlayerStatsData_Model is not assigned in the editor.");
+
+        agent = GetComponent<NavMeshAgent>();
+        // reset data when game starts for later. 
+        playerStatsData_Model.ResetDataForObservable(); 
+        BoardActionsEvents.WayPointChangeEvent.AddListener(OnWayPointChange);
+    }
+    private void OnDestroy()
+    {
+        BoardActionsEvents.WayPointChangeEvent.RemoveListener(OnWayPointChange);
+    }
+    private void OnWayPointChange(Vector3 arg0)
+    {
+        agent.SetDestination(arg0);
+    }
+}
+```
+
+this logic is not separated. (Again this is the final code I will be coming to the PlayerStatsData on the Data-driven part )
+
+On the AISide at this point, we could do similar things in the AIObject pool. This listens to the AI's Despwan event and then acts accordingly.  
+
+```Csharp 
+// AI/AIObjectPool.cs 
+{
+	//...in Awake 
+        AIEvents.DespwnAI.AddListener(OnDespwnAI);
+    }
+
+    private void OnDespwnAI(GameObject arg0)
+    {
+        // Find the AI object in the dictionary and set it to false
+        // then set the game object to false
+        DisableAI(arg0);
+    }
+
+    private void DisableAI(GameObject arg0)
+    {
+        if (IsAiAliveDictionary.ContainsKey(arg0))
+        {
+            IsAiAliveDictionary[arg0] = false;
+            arg0.SetActive(false);
+            _CurrentOnBoard--;
+        }
+    }
+```
+
+
+![[Screenshot 2023-09-07 at 11.26.43.png]]
