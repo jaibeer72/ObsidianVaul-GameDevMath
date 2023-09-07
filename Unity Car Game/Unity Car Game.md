@@ -300,6 +300,111 @@ private IEnumerator SpawnAIObject()
     }
 ```
 
-I wanted to also use my own way of doing things cause I needed to search pretty often which game objects are active and inactive. So a dictionary that will take a reference to the transform. We randomly assign Start and endpoints. 
+I also wanted to use my own way of doing things cause I needed to search which game objects are active and inactive. So a dictionary that will take a reference to the transform. We randomly assign Start and endpoints. 
 
-But there was a problem! the cars would always end up 
+But there was a problem! the cars would always end up not going through the center or the assignment tends not to go in a good arch so... i decided to Change up the AIAgent.cs class. 
+
+```Csharp 
+//AI/AI_Agent.cs 
+public class AI_Agent : MonoBehaviour
+{
+    [SerializeField]
+    public PlayerStatsData playerStatsData_Model;
+    [SerializeField] private int Impact_Health = 25;
+    [SerializeField] private int Impact_Score = 0;
+    [SerializeField] private int Impact_Level = 0;
+    [SerializeField] private int Impact_Money = 0;
+
+
+    public NavMeshAgent agent;
+    private Queue<Vector3> _path = new Queue<Vector3>();
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
+    // should have written this with a queue overload. Still not bad. 
+    public void SetDestination(Vector3 destination , Vector3 via)
+    {
+        _path.Enqueue(destination);
+        agent.SetDestination(via);
+    }
+    public void SetStartPoint(Vector3 startPoint)
+    {
+        agent.Warp(startPoint);
+    }
+    public bool IsAtDestination()
+    {
+        if (agent.remainingDistance <= agent.stoppingDistance)
+        {
+            if(_path.Count > 0)
+            {
+                agent.SetDestination(_path.Dequeue());
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Player has collected the collectable");
+            playerStatsData_Model.stats.Health += Impact_Health;
+            playerStatsData_Model.stats.Score += Impact_Score;
+            playerStatsData_Model.stats.Level += Impact_Level;
+            playerStatsData_Model.stats.Money += Impact_Money;
+            playerStatsData_Model.Notify(playerStatsData_Model.stats);
+
+            AIEvents.DespwnAI.Invoke(gameObject);
+        }
+    }
+}
+```
+
+### Moment of Truth ... Collectables are not an object pool. 
+mainly cause I felt the board was too small for more than 3 things to be there at once. so just what was needed. 
+
+also! i wanted to make a probability-based spawn system later so this was just a temporary thing. 
+
+also! I knew that Y value wouldn't change for now, so I just decided to make it a random point using a Random point in a Unit Circle. 
+
+```Csharp 
+    IEnumerator SpwanRandomeLyOnTheLevel()
+    {
+        yield return new WaitForSeconds(5f);
+        while (true)
+        {
+            if (_currentCollectableOnBoard >= maxCollectableOnBoard)
+            {
+                yield return new WaitForSeconds(5f);
+            }
+            else
+            {
+                int randomeIndex = Random.Range(0, collectables.Length);
+                if (!collectables[randomeIndex].activeInHierarchy)
+                {
+                    Vector2 pointInsideUnitCircle = Random.insideUnitCircle * PlayGroundRadius;
+                    collectables[randomeIndex].transform.position = new Vector3(pointInsideUnitCircle.x , this.transform.position.y , pointInsideUnitCircle.y);
+                    collectables[randomeIndex].SetActive(true);
+                    _currentCollectableOnBoard++;
+                }
+                yield return new WaitForSeconds(5f);
+            }
+        }
+    }
+```
+
+Don't know why I like counters so much. But explicit counters in base-level code do not have magic numbers is something I like. Now we add some particles and some pa
+
+# Event-based Explosion spanning 
+
+
