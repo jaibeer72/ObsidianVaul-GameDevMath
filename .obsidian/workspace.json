@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -173,6 +172,8 @@
   },
   "active": "11ce6ea43e757207",
   "lastOpenFiles": [
+    "Screenshot 2023-09-07 at 14.37.38.png",
+    "Screenshot 2023-09-07 at 14.36.22.png",
     "Screenshot 2023-09-07 at 14.13.48.png",
     "Screenshot 2023-09-07 at 14.01.42.png",
     "Screenshot 2023-09-07 at 13.57.25.png",
@@ -182,8 +183,6 @@
     "Screenshot 2023-09-07 at 12.47.43.png",
     "Screenshot 2023-09-07 at 12.06.35.png",
     "Screenshot 2023-09-07 at 11.26.43.png",
-    "mermaid-diagram-2023-09-06-185228.png",
-    "Screenshot 2023-09-06 at 19.21.34.png",
     "().md",
     "Nav.md",
     "Unity Car Game/Unity Car Game.md",

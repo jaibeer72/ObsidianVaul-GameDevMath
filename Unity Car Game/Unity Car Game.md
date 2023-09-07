@@ -844,7 +844,100 @@ public class HUDview : UIView, IObserver<PlayerStats>, IObserver<GameConfigData>
 	    playerStatsData_Model = Addressables.LoadAssetAsync<PlayerStatsData>("Assets/Data/PlayerStatsData.asset").WaitForCompletion();
         unsubscriberPlayerData = playerStatsData_Model.Subscribe(this);
         Debug.Log("Helth: " + playerStatsData_Model.stats.Health);
+	    // Getting and manipulating UI Objects in the View 
     }
+	// Observing the value changes 
+    public void OnNext(PlayerStats value)
+    {
+        Debug.Log("Helth: " + value.Health);
+        healthBarComponent.value = value.Health;
+        if(value.Health <= 0)
+        {
+            GameEvents.GameOver.Invoke();
+            UIEvents.SceneRemoveEvent.Invoke("GameActors",OnGameLossScreenRemoves);
+        }
+        MoneyLable.text = GetMoneyString_Ink(value.Money);
+        
+    }
+    // ..... // 
 
 }
 ```
+
+which gives us a simple 2 scripts 
+![[Screenshot 2023-09-07 at 14.36.22.png]]
+
+# Scene Composition to easily add or subtract 
+
+## what do we have? 
+- isolated systems. 
+- Individual scenes 
+- UI systems that are flexible and fast. 
+- now let's create a scene management system 
+
+let's create a somewhat asynchronous scene controller.  
+```Csharp 
+public class SceneController : MonoBehaviour
+{
+    [SerializeField] private string BaseScene = "BaseScene";
+    [SerializeField] private string UIScene = "UIScene";
+    [SerializeField] private string GameActors = "GameActors";
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        StartCoroutine(LoadSceneAsync(UIScene, LoadSceneMode.Additive, () => { Debug.Log("UISceneLoaded"); }));
+        UIEvents.SceneAddEvent.AddListener(OnSceneAdd);
+        UIEvents.SceneRemoveEvent.AddListener(OnSceneRemove);
+    }
+
+    private void OnSceneRemove(string arg0, Action arg1)
+    {
+        StartCoroutine(UnloadSceneAsync(arg0, arg1));
+    }
+
+    private void OnSceneAdd(string arg0, Action arg1)
+    {
+        StartCoroutine(LoadSceneAsync(arg0, LoadSceneMode.Additive, arg1));
+    }
+
+    private IEnumerator LoadSceneAsync(string scene, LoadSceneMode mode, System.Action onComplete = null)
+    {
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene, mode);
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
+        onComplete?.Invoke();
+    }
+    private IEnumerator UnloadSceneAsync(string sceneName, System.Action onComplete = null)
+    {
+        AsyncOperation asyncOperation = SceneManager.UnloadSceneAsync(sceneName);
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
+        onComplete?.Invoke();
+    }
+}
+```
+
+and now we can easily. compose Scenes to load up levels or even compose scenes based on how we want to play or go . 
+
+exmaple1 
+```Csharp 
+    private void OnPlayButtonClicked()
+    {
+        UIEvents.SceneAddEvent.Invoke("GameActors" , OnSceneLoaded);
+    }
+
+    private void OnSceneLoaded()
+    {
+        GameEvents.GameStart.Invoke();
+        UIEvents.UIChangeEvent.Invoke("HUD");
+    }
+```
+
+so now we have 3 scenes: one base scene, one that has the UI and one that has the Actors and all we need to do to restart is unload the GameActors and reload it in
+
+![[Screenshot 2023-09-07 at 14.37.38.png]]
