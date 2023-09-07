@@ -200,3 +200,7 @@ On the AISide at this point, we could do similar things in the AIObject pool. Th
 
 
 ![[Screenshot 2023-09-07 at 11.26.43.png]]
+Now it was all about setting up the NavMesh area this made sure we can not more easily control AI. 
+
+### AI Spwan locations 
+
