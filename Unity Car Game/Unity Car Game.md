@@ -204,3 +204,6 @@ Now it was all about setting up the NavMesh area this made sure we can not more 
 
 ### AI Spwan locations 
 
+So to have a working spawn locations and have them work properly I decided to set up a AI Spwn position to be on the edges. 
+
+![[Screenshot 2023-09-07 at 12.06.35.png]]
