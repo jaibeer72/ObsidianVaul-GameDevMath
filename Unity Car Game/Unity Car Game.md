@@ -207,3 +207,99 @@ Now it was all about setting up the NavMesh area this made sure we can not more 
 So to have a working spawn locations and have them work properly I decided to set up a AI Spwn position to be on the edges. 
 
 ![[Screenshot 2023-09-07 at 12.06.35.png]]
+
+Now, We just made a gizmo for each spawn point this was for 2 reasons 
+- A visual representation to know exactly where the AI Cars will spawn and 
+- also if we want to increase the number of spawn points or change on based on other play areas. We can just change them around. 
+also it helps show that i am willing and capable of making some editor tools 
+
+```Csharp 
+//DebugInfo/DebugDrawSpwanPosGizmos.cs 
+[ExecuteInEditMode]
+public class DebugDrawSpwanPosGizmos : MonoBehaviour
+{
+    GameObject spawnPositionParent;
+    Transform[] spawnPositionTransforms;
+
+    void Awake()
+    {
+        spawnPositionParent = this.gameObject;
+        spawnPositionTransforms = spawnPositionParent.GetComponentsInChildren<Transform>();
+
+        foreach (Transform spawnTransform in spawnPositionTransforms)
+        {
+            if (spawnTransform == spawnPositionParent.transform)
+                continue;
+
+            if(spawnTransform.gameObject.GetComponent<DrawSpawnPosGizmos>() == null)
+            {
+                spawnTransform.gameObject.AddComponent<DrawSpawnPosGizmos>();
+            } 
+        }
+    }
+}
+```
+I also wanted to make a separate script so I can make different types of utilities later. 
+
+## Object pooling for AI and Collectables 
+
+Now, This was made in a slight Hurry, I may have forgotten this exists and work's perfectly with my system as well . Next time we can use the IObjectPool. 
+https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html
+
+but for now this works perfectly. So we are good. but ! a stacked implementation that also was more expandable and Enumerable would have been so good! So this part of the system needs a little refactoring 
+
+```Csharp
+//AI/AIObjectPool.cs
+private IEnumerator SpawnAIObject()
+    {
+        // wait for 3 seconds   
+        yield return new WaitForSeconds(3);
+        while (!_StopSpwanEnumirator)
+        {
+            Shuffle(spawnPostions);
+            if (_CurrentOnBoard > m_MaxEnemiesOnBoard)
+                yield return null;
+
+            for (int i = 0; i < aiObjectCount; i++)
+            {
+                var aiAgent = aiObjects[i].GetComponent<AI_Agent>();
+                if(_CurrentOnBoard < m_MaxEnemiesOnBoard)
+                {
+                    if (!IsAiAliveDictionary[aiObjects[i]])
+                    {
+                        aiAgent.SetStartPoint(spawnPostions[UnityEngine.Random.Range(0, spawnPostions.Length)].position);
+                        // look straight ahead
+                        aiAgent.transform.LookAt(spawnPostionsParent.transform.position);
+                        aiObjects[i].SetActive(true);
+                        IsAiAliveDictionary[aiObjects[i]] = true;
+                        aiAgent.SetDestination(spawnPostions[UnityEngine.Random.Range(0, spawnPostions.Length)].position, spawnPostionsParent.transform.position);
+                        _CurrentOnBoard++;
+                    }
+                }
+                if (IsAiAliveDictionary[aiObjects[i]] && aiAgent.IsAtDestination())
+                {
+                    // despwan the AI object
+                    DisableAI(aiObjects[i]);
+                }
+                yield return null;
+            }
+            yield return null;
+        }
+    }
+
+    void Shuffle(Transform[] array)
+    {
+        int n = array.Length;
+        for (int i = n - 1; i > 0; i--)
+        {
+            int j = UnityEngine.Random.Range(0, i + 1);
+            Transform temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+```
+
+I wanted to also use my own way of doing things cause I needed to search pretty often which game objects are active and inactive. So a dictionary that will take a reference to the transform. We randomly assign Start and endpoints. 
+
+But there was a problem! the cars would always end up 
