@@ -44,6 +44,28 @@ so abs(B-A) is the answer.
 5) $((a^{b}) \%m = (a\%m)^{b} \%m)$ #modSquareProp #modPowerProp
 
 #fastPower
-```cpp 
+```run-cpp 
+#include <iostream>
+#define MOD 1000000007
+
+class Fp{
+public: 
+	static long long fast_power(long long base , long long pow){
+	long long res = 1; 
+	while(pow>0)
+	{
+		if(pow%2 == 1){
+			res = (res * base)%MOD;
+		}
+		base = (base * base)%MOD; 
+		pow = pow/2;  
+	}
+	return res; 
+}
+};
+
+
+std::cout<<"Fast power \n"; 
+std::cout<<Fp::fast_power(2,5) << std::endl; 
 
 ```

@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -172,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "89810a410a6ad9cc",
+  "active": "11ce6ea43e757207",
   "lastOpenFiles": [
-    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
+    "DS ALgos/Bit-Manipulation.md",
     "DS ALgos/Modular Arithmetic..md",
+    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "VulkanGFX.wiki/Moduler systems using macros.md",
     "Unity Car Game/Unity Car Game.md",
     "Cpp stuff",
@@ -202,7 +202,6 @@
     "VulkanDev/VulkanGFX.wiki/Dev-Log-Home.md",
     "1.md",
     "VulkanDev/VulkanGFX.wiki/1 - Instance and physical device selection.md",
-    "DS ALgos/Bit-Manipulation.md",
     "VulkanDev/VulkanGFX.wiki",
     "DS ALgos",
     "GameMath",
