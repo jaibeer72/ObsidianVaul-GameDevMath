@@ -159,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,7 +172,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "11ce6ea43e757207",
+  "active": "89810a410a6ad9cc",
   "lastOpenFiles": [
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "DS ALgos/Modular Arithmetic..md",
