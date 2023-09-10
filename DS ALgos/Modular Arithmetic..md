@@ -11,3 +11,4 @@ visualizer();
 
 
 
+okay the range 
