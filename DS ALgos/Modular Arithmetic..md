@@ -36,6 +36,9 @@ so now let's try and make $B-A$ needs to become 0 and the M that will do that it
 
 so abs(B-A) is the answer. 
 
-## Properties of Modular arthamatic 
+## Properties of Modular arithamatic
 #modulerArthamaticProperties
-1) $(a+b)\%m = (a\%m + b\%m)$
+1) $(a+b)\%m = (a\%m + b\%m)\%m$
+2) $(a-b)\% m = ((a\%m-b\%m)+m)\%m$ (because negation can become 0)
+3) $(a*b)\%m = ((a\%m * b\%m))\%m$
+5) $a^{b} \% m = $
