@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6ce824801413bdec",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.11"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0ef52dde9728849",
+  "active": "6ce824801413bdec",
   "lastOpenFiles": [
     "UnrealEngine/WaveFunction Collaps.md",
     "UnrealEngine/BasicGames/Crypt Raider.md",
