@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
+                "file": "DS ALgos/GCD.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
+                "file": "DS ALgos/GCD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
+                "file": "DS ALgos/GCD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md"
+                "file": "DS ALgos/GCD.md"
               }
             }
           },
@@ -171,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "89810a410a6ad9cc",
+  "active": "11ce6ea43e757207",
   "lastOpenFiles": [
+    "VulkanGFX.wiki/Moduler systems using macros.md",
     "Unity Car Game/Game Setup.md",
     "Unity Car Game/NavMesh.md",
     "Unity Car Game/Unity Car Game.md",
@@ -184,7 +185,6 @@
     "conflict-files-obsidian-git.md",
     "UnrealEngine/BasicGames/Crypt Raider.md",
     "UnrealEngine/BasicGames",
-    "VulkanGFX.wiki/Moduler systems using macros.md",
     "VulkanGFX.wiki/Home.md",
     "DS ALgos/Modular Arithmetic..md",
     "DS ALgos/Bit-Manipulation.md",

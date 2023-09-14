@@ -28,3 +28,29 @@ Properties of GCS
 	4) GCD(a,b-a) = gcd(a,b) where (b>a)
 	5) GCD(a,b) = GCD(a, b%a) where (b>a)
 	6) GCD(a,b) = GCD(b%a,a)
+	7) GCD(a,b,c) = GCD(GCD(a,b),C)
+
+a backtrcking algo for GCD and LCM 
+#LCM #LowestCommonMultiple 
+```run-cpp 
+#include<iostream>
+
+class sol{ 
+public: 
+	static int gcd(int a, int b){ 
+		if(b < a) std::swap(a, b); 
+		if(a == 0) return b; 
+		return gcd(b % a, a); 
+	} 
+	static long long lcm(int a, int b){
+	return (long long) (a * b) / gcd(a, b); 
+	} 
+};
+
+
+std::cout<<sol::lcm(25,15); 
+
+```
+
+$$LCM(a,b)=\frac{a \cdot b}{GCD(a,b)}
+$$
