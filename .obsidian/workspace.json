@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -184,10 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "636b2170a2ab34f8",
+  "active": "0bb92d30eac2a738",
   "lastOpenFiles": [
-    "VulkanGFX.wiki/Moduler systems using macros.md",
+    "conflict-files-obsidian-git.md",
     "DS ALgos/GCD.md",
+    "UnrealEngine/BasicGames/Crypt Raider.md",
+    "UnrealEngine/BasicGames",
+    "VulkanGFX.wiki/Moduler systems using macros.md",
     "VulkanGFX.wiki/Home.md",
     "DS ALgos/Modular Arithmetic..md",
     "DS ALgos/Bit-Manipulation.md",
