@@ -27,3 +27,4 @@ Properties of GCS
 	3) GDC(1,a) = 1
 	4) GCD(a,b-a) = gcd(a,b) where (b>a)
 	5) GCD(a,b) = GCD(a, b%a) where (b>a)
+	6) GCD(a,b) = GCD(b%a,a)
