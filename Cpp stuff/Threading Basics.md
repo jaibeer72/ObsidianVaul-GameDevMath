@@ -28,3 +28,12 @@ so the rather than
 waitfor(p1) then run P2 which is non preemptive 
 #CPU #Premptive #NonPreemptive
 
+Process Control Block / Reprasents a process 
+- Has all the information about the process 
+	- Instructions. 
+	- Pointer to the line of code (Program Counter) #ProgramCounter 
+	- ProcessId
+	- Registers
+	- FilePointers  Rosources infomation
+
+The representation of a Process control block will be on class or structurer. 
