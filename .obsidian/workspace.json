@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "Cpp stuff/Threading Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "Cpp stuff/Threading Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "Cpp stuff/Threading Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rough Notes DWD.md"
+                "file": "Cpp stuff/Threading Basics.md"
               }
             }
           },
@@ -197,6 +198,7 @@
   "active": "e7e8f3398223cd7e",
   "lastOpenFiles": [
     "Rough Notes DWD.md",
+    "Cpp stuff/Threading Basics.md",
     "VulkanGFX.wiki/Moduler systems using macros.md",
     "Unity Car Game/Game Setup.md",
     "Unity Car Game/NavMesh.md",
