@@ -13,36 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS ALgos/GCD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "707f137ee5e1ba3e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
-              }
-            }
-          },
-          {
-            "id": "e7e8f3398223cd7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Cpp stuff/Threading Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,10 +172,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e7e8f3398223cd7e",
+  "active": "11ce6ea43e757207",
   "lastOpenFiles": [
-    "Rough Notes DWD.md",
+    "DS ALgos/GCD.md",
+    "VulkanGFX.wiki/Home.md",
+    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "Cpp stuff/Threading Basics.md",
+    "Rough Notes DWD.md",
     "VulkanGFX.wiki/Moduler systems using macros.md",
     "Unity Car Game/Game Setup.md",
     "Unity Car Game/NavMesh.md",
@@ -206,14 +187,11 @@
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.37.38.png",
     "Unity Car Game/Assets",
     "Unity Car Game/Assets/mermaid-diagram-2023-09-06-185228.png",
-    "DS ALgos/GCD.md",
     "conflict-files-obsidian-git.md",
     "UnrealEngine/BasicGames/Crypt Raider.md",
     "UnrealEngine/BasicGames",
-    "VulkanGFX.wiki/Home.md",
     "DS ALgos/Modular Arithmetic..md",
     "DS ALgos/Bit-Manipulation.md",
-    "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "Cpp stuff",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.36.22.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.13.48.png",
