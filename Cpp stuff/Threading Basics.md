@@ -24,8 +24,8 @@ like eg P1 and P2 are 2 programers
 
 it will run P1(dt)->P2(dt)->P1(dt).. so on till P1 and P2 are done. 
 
-so the rather than 
-waitfor(p1) then run P2 which is non preemptive 
+so rather than 
+wait for(p1) then run P2 which is non preemptive 
 #CPU #Premptive #NonPreemptive
 
 Process Control Block / Reprasents a process 
@@ -34,6 +34,18 @@ Process Control Block / Reprasents a process
 	- Pointer to the line of code (Program Counter) #ProgramCounter 
 	- ProcessId
 	- Registers
+	- Process state
 	- FilePointers  Rosources infomation
 
-The representation of a Process control block will be on class or structurer. 
+The representation of a Process control block will be on class or structure. 
+
+Certain processes are I/O Bound processes. 
+- Accessing the Disk 
+- Waiting on the input. 
+- Putting the output somewhere 
+- Network access. 
+
+Disk -> RAM -> CPU Executes 
+IO bound processes the CPU is idle. 
+
+
