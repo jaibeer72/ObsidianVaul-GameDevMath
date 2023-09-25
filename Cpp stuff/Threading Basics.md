@@ -84,3 +84,5 @@ this is a
 -> primitive algorithm 
 #Premptive #PremptiveAlgorithm 
 This can have the ability to pause a task or process if it finds something faster. 
+
+so add the process queue and arrange it based on the time left. 
