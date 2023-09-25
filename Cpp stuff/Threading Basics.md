@@ -52,3 +52,27 @@ IO bound processes the CPU is idle.
 ## Problems due to CPU scheduling 
 - Context Switching 
 	- When one process is being prioritised over the other. 
+	- Too many context switching is a bad Idea 
+
+#algorithms #CPUSceduling
+
+## FCFS ( first come first Serve) 
+this is a CPU algorithm based on Queue 
+
+
+so this world ons 
+
+Time is Theoritial algo times infer it. 
+or past dated. 
+
+so 
+
+| PID | ArrivalTime | Time To Complete | 
+| --- | ---------- |--------------------|
+| 1 | 1| 4| 
+|2|2|3| 
+![[Screenshot 2023-09-25 at 13.13.35.png]]
+so in the above
+
+so empty no process at time 1 
+
