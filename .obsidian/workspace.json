@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cpp stuff/Moar CPU Sceduling Algos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cpp stuff/Moar CPU Sceduling Algos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cpp stuff/Moar CPU Sceduling Algos.md"
-              }
+              "state": {}
             }
           },
           {
@@ -180,10 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7821bb5e15c0b173",
+  "active": "618e130a4dd4546e",
   "lastOpenFiles": [
-    "Cpp stuff/Threading Basics.md",
     "Cpp stuff/Moar CPU Sceduling Algos.md",
+    "Cpp stuff/Threading Basics.md",
     "Cpp stuff/Screenshot 2023-09-25 at 13.13.35.png",
     "DS ALgos/GCD.md",
     "VulkanGFX.wiki/Home.md",
