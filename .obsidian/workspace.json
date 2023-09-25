@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -179,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0bb92d30eac2a738",
+  "active": "b886d9febfb341ca",
   "lastOpenFiles": [
     "BackEnd/LoadBalancers.md",
     "BackEnd",
