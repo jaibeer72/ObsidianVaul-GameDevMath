@@ -49,6 +49,6 @@ Disk -> RAM -> CPU Executes
 IO bound processes the CPU is idle. 
 
 
-## Problems due to CPU sceduling 
+## Problems due to CPU scheduling 
 - Context Switching 
-	- 
+	- When one process is being prioritised over the other. 
