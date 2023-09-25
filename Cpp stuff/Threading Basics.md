@@ -76,3 +76,11 @@ so in the above
 
 so empty no process at time 1 
 
+
+## SRTF Shortest remaining time first. 
+OS Scheduling algorithms. 
+
+this is a 
+-> primitive algorithm 
+#Premptive #PremptiveAlgorithm 
+This can have the ability to pause a task or process if it finds something faster. 
