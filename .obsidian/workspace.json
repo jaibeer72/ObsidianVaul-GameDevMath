@@ -102,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -207,12 +206,14 @@
   },
   "active": "4698744030e5a8c5",
   "lastOpenFiles": [
+    "Screenshot 2023-09-25 at 16.45.41.png",
+    "Cpp stuff/Moar CPU Sceduling Algos.md",
+    "BackEnd/Databases.md",
     "BackEnd/Payment Microservices.md",
     "Cpp stuff/Parallel Programming.md",
     "BackEnd/LoadBalancers.md",
     "BackEnd",
     "Unity Car Game/Unity Car Game.md",
-    "Cpp stuff/Moar CPU Sceduling Algos.md",
     "Cpp stuff/Threading Basics.md",
     "Cpp stuff/Screenshot 2023-09-25 at 13.13.35.png",
     "DS ALgos/GCD.md",
@@ -251,8 +252,6 @@
     "VulkanDev/VulkanGFX.wiki",
     "DS ALgos",
     "GameMath",
-    "DS ALgos/Subsequence and sub-sets.md",
-    "GameMath/Vectors & Dot Product • Math for Game Devs.md",
     "Untitled.canvas"
   ]
 }
