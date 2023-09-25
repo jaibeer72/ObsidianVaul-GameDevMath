@@ -38,9 +38,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4698744030e5a8c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cpp stuff/Parallel Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/LoadBalancers.md",
+                "file": "Cpp stuff/Parallel Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/LoadBalancers.md",
+                "file": "Cpp stuff/Parallel Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/LoadBalancers.md"
+                "file": "Cpp stuff/Parallel Programming.md"
               }
             }
           },
@@ -193,8 +205,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b886d9febfb341ca",
+  "active": "4698744030e5a8c5",
   "lastOpenFiles": [
+    "BackEnd/Payment Microservices.md",
+    "Cpp stuff/Parallel Programming.md",
     "BackEnd/LoadBalancers.md",
     "BackEnd",
     "Unity Car Game/Unity Car Game.md",
@@ -239,7 +253,6 @@
     "GameMath",
     "DS ALgos/Subsequence and sub-sets.md",
     "GameMath/Vectors & Dot Product • Math for Game Devs.md",
-    "Untitled.canvas",
-    "2023-07-10.md"
+    "Untitled.canvas"
   ]
 }
