@@ -78,6 +78,7 @@ so empty no process at time 1
 
 
 ## SRTF Shortest remaining time first. 
+#SRTF
 OS Scheduling algorithms. 
 
 this is a 
@@ -86,3 +87,15 @@ this is a
 This can have the ability to pause a task or process if it finds something faster. 
 
 so add the process queue and arrange it based on the time left. 
+
+problem of starvation
+#cpuProblems #Starvation
+
+Assignments: 
+- State 
+- FCFS implementaion 
+- Shortest Job fist non pre-emptive vesrion 
+- Priority scedulring 
+	- FCFS 
+	- SRTF 
+[[Moar CPU Sceduling Algos]]

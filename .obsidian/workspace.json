@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cpp stuff/Threading Basics.md",
+                "file": "Cpp stuff/Moar CPU Sceduling Algos.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "618e130a4dd4546e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -48,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Premptive",
+                "query": "tag:#Starvation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cpp stuff/Threading Basics.md",
+                "file": "Cpp stuff/Moar CPU Sceduling Algos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cpp stuff/Threading Basics.md",
+                "file": "Cpp stuff/Moar CPU Sceduling Algos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cpp stuff/Threading Basics.md"
+                "file": "Cpp stuff/Moar CPU Sceduling Algos.md"
               }
             }
           },
@@ -175,6 +183,7 @@
   "active": "7821bb5e15c0b173",
   "lastOpenFiles": [
     "Cpp stuff/Threading Basics.md",
+    "Cpp stuff/Moar CPU Sceduling Algos.md",
     "Cpp stuff/Screenshot 2023-09-25 at 13.13.35.png",
     "DS ALgos/GCD.md",
     "VulkanGFX.wiki/Home.md",
