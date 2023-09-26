@@ -23,12 +23,8 @@
             "id": "618e130a4dd4546e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -144,7 +140,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +156,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,9 +177,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md"
-              }
+              "state": {}
             }
           },
           {
@@ -229,10 +221,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0bb92d30eac2a738",
+  "active": "618e130a4dd4546e",
   "lastOpenFiles": [
-    "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.44.42.png",
+    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
+    "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
     "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
+    "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.44.42.png",
     "BackEnd/LoadBalancers.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.35.29.png",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 16.45.41.png",
@@ -242,7 +236,6 @@
     "Cpp stuff/Parallel and concurrent Programming/Moar CPU Sceduling Algos.md",
     "Cpp stuff/Parallel and concurrent Programming/MIMD Catagories.md",
     "Unity Car Game/Unity Car Game.md",
-    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "BackEnd/Databases.md",
     "BackEnd/Payment Microservices.md",
     "BackEnd",
@@ -266,7 +259,6 @@
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.36.22.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.13.48.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.01.42.png",
-    "Unity Car Game/Assets/Screenshot 2023-09-07 at 13.57.25.png",
     "().md",
     "Nav.md",
     "Unity Car Game",

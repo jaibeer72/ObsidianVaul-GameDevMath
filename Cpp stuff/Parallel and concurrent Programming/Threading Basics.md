@@ -1,5 +1,6 @@
 
 # CPU scheduling and processes.
+#CPUSceduling 
 
 
 The manager resolves conflicts to take a call. 
