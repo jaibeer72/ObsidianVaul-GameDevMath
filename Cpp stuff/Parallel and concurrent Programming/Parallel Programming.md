@@ -30,3 +30,7 @@ well , different things happening on differnt data.
 
 
 # [[Memory Management]]
+
+
+Parallelsum is Simeltanous execusation 
+Concurrency is Dealing with multiple things at once. This means a lot of #contextSwitching 

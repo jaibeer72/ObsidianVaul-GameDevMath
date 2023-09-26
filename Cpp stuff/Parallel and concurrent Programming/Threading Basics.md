@@ -53,7 +53,7 @@ IO bound processes the CPU is idle.
 ## Problems due to CPU scheduling 
 - Context Switching 
 	- When one process is being prioritised over the other. 
-	- Too many context switching is a bad Idea 
+	- Too many context switching is a bad Idea #contextSwitching 
 
 #algorithms #CPUSceduling
 

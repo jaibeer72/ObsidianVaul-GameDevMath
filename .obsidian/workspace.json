@@ -23,12 +23,8 @@
             "id": "618e130a4dd4546e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -37,14 +33,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
+                "file": "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +106,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +122,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +143,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md"
-              }
+              "state": {}
             }
           },
           {
@@ -195,13 +187,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4698744030e5a8c5",
+  "active": "618e130a4dd4546e",
   "lastOpenFiles": [
     "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
+    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 16.45.41.png",
     "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
-    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.44.42.png",
     "BackEnd/LoadBalancers.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.35.29.png",
