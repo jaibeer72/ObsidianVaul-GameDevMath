@@ -16,8 +16,12 @@ We need to understand how memory organised cause if we cannot access memory fast
 #### Architectures
 - SMP or Symmetric MultiProcessing #SMP-Memory-Architecture 
 	- In SMP ![[Screenshot 2023-09-26 at 11.35.29.png]]
-### Non Uniform Memory access
+### Non Uniform Memory access 
+#Non-Uniform-Memory-Accesss 
+this is a collection of multiple #SMP-Memory-Architecture put together. 
+![[Screenshot 2023-09-26 at 11.44.42.png]]
 
+sometimes does not scale well and takes longer to access things  
 
 # Memory Problems to look out for 
 #CashCoherency-Problem 
