@@ -23,8 +23,12 @@
             "id": "618e130a4dd4546e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -45,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cpp stuff/Parallel Programming.md",
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,18 +61,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cpp stuff/MIMD Catagories.md",
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3b778a59a70e5302",
+            "id": "7613b86110514d60",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "image",
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 16.45.41.png"
+              }
+            }
+          },
+          {
+            "id": "e74155e26dddb02f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -138,6 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +195,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Memory Management.md"
+              }
             }
           },
           {
@@ -207,8 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,17 +243,20 @@
   },
   "active": "618e130a4dd4546e",
   "lastOpenFiles": [
-    "Cpp stuff/MIMD Catagories.md",
-    "Cpp stuff/Parallel Programming.md",
-    "Cpp stuff/Moar CPU Sceduling Algos.md",
-    "Cpp stuff/Threading Basics.md",
-    "Screenshot 2023-09-25 at 16.45.41.png",
+    "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.35.29.png",
+    "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
+    "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 16.45.41.png",
+    "Cpp stuff/Parallel and concurrent Programming",
+    "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 13.13.35.png",
+    "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
+    "Cpp stuff/Parallel and concurrent Programming/Moar CPU Sceduling Algos.md",
+    "Cpp stuff/Parallel and concurrent Programming/MIMD Catagories.md",
+    "Unity Car Game/Unity Car Game.md",
+    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "BackEnd/Databases.md",
     "BackEnd/Payment Microservices.md",
     "BackEnd/LoadBalancers.md",
     "BackEnd",
-    "Unity Car Game/Unity Car Game.md",
-    "Cpp stuff/Screenshot 2023-09-25 at 13.13.35.png",
     "DS ALgos/GCD.md",
     "VulkanGFX.wiki/Home.md",
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
@@ -263,11 +287,8 @@
     "UnrealEngine",
     "VulkanDev/VulkanGFX.wiki/Home.md",
     "VulkanDev/VulkanGFX.wiki/Dev-Log-Home.md",
-    "1.md",
-    "VulkanDev/VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "VulkanDev/VulkanGFX.wiki",
     "DS ALgos",
-    "GameMath",
     "Untitled.canvas"
   ]
 }

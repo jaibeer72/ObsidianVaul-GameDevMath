@@ -27,3 +27,6 @@ so if i am transforming and also processing data at the same tim..
 well , different things happening on differnt data. 
 - Multicore programs or Network clusters 
 [[MIMD Catagories]]
+
+
+# [[Memory Management]]
