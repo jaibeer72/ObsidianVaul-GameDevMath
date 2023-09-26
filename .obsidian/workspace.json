@@ -35,8 +35,12 @@
             "id": "4698744030e5a8c5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -106,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md"
+              }
             }
           },
           {
