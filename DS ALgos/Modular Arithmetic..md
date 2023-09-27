@@ -36,9 +36,36 @@ so now let's try and make $B-A$ needs to become 0 and the M that will do that it
 
 so abs(B-A) is the answer. 
 
-## Properties of Modular arithamatic
+## Properties of Modular arithmetic
 #modulerArthamaticProperties
-1) $(a+b)\%m = (a\%m + b\%m)\%m$
-2) $(a-b)\% m = ((a\%m-b\%m)+m)\%m$ (because negation can become 0)
-3) $(a*b)\%m = ((a\%m * b\%m))\%m$
-5) $a^{b} \% m = $
+1) $(a+b)\%m = (a\%m + b\%m)\%m$ #modAdditionProp
+2) $(a-b)\% m = ((a\%m-b\%m)+m)\%m$ (because negation can become 0) #modeSubtractionProp
+3) $(a*b)\%m = ((a\%m * b\%m))\%m$ #modMultiplicationProp #modProductProp
+5) $((a^{b}) \%m = (a\%m)^{b} \%m)$ #modSquareProp #modPowerProp
+
+#fastPower
+```run-cpp 
+#include <iostream>
+#define MOD 1000000007
+
+class Fp{
+public: 
+	static long long fast_power(long long base , long long pow){
+	long long res = 1; 
+	while(pow>0)
+	{
+		if(pow%2 == 1){
+			res = (res * base)%MOD;
+		}
+		base = (base * base)%MOD; 
+		pow = pow/2;  
+	}
+	return res; 
+}
+};
+
+
+std::cout<<"Fast power \n"; 
+std::cout<<Fp::fast_power(2,5) << std::endl; 
+
+```
