@@ -211,7 +211,7 @@ So to have a working spawn locations and have them work properly I decided to se
 Now, We just made a gizmo for each spawn point this was for 2 reasons 
 - A visual representation to know exactly where the AI Cars will spawn and 
 - also if we want to increase the number of spawn points or change on based on other play areas. We can just change them around. 
-also it helps show that i am willing and capable of making some editor tools 
+also it helps show that i am willing and capable of making some editor tools #gizmos 
 
 ```Csharp 
 //DebugInfo/DebugDrawSpwanPosGizmos.cs 
