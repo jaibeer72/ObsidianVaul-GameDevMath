@@ -1,5 +1,5 @@
 {
-  "openAIApiKey": "",
+  "openAIApiKey": "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",
   "huggingfaceApiKey": "",
   "cohereApiKey": "",
   "anthropicApiKey": "",
@@ -20,5 +20,5 @@
   "stream": true,
   "embeddingProvider": "openai",
   "defaultSaveFolder": "copilot-conversations",
-  "debug": false
+  "debug": true
 }

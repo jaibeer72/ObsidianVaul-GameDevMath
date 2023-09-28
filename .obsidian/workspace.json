@@ -152,13 +152,21 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "64db5c0adf6737d0",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,6 +181,7 @@
   },
   "active": "4698744030e5a8c5",
   "lastOpenFiles": [
+    "UnrealEngine/BasicGames/Pasted image 20230928210228.png",
     "Pasted image 20230928205833.png",
     "UnrealEngine/BasicGames/Unreal Systems.md",
     "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
