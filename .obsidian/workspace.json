@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "618e130a4dd4546e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +122,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "VulkanGFX.wiki/Moduler systems using macros.md"
-              }
+              "state": {}
             }
           },
           {
@@ -183,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "618e130a4dd4546e",
+  "active": "0bb92d30eac2a738",
   "lastOpenFiles": [
+    "VulkanGFX.wiki/Moduler systems using macros.md",
     "UnrealEngine/Unreal Keyboard ShorCuts.md",
     "UnrealEngine/BasicGames/Unreal Systems.md",
     "UnrealEngine/BasicGames/Scene Compoent vs Actor Component.md",
@@ -210,7 +194,6 @@
     "VulkanGFX.wiki/Home.md",
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
     "Rough Notes DWD.md",
-    "VulkanGFX.wiki/Moduler systems using macros.md",
     "Unity Car Game/Game Setup.md",
     "Unity Car Game/NavMesh.md",
     "Unity Car Game/Assets/Screenshot 2023-09-06 at 19.21.34.png",
