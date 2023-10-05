@@ -11,8 +11,12 @@
             "id": "7821bb5e15c0b173",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md"
+              }
             }
           },
           {
@@ -150,10 +158,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "copilot:Copilot Chat": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -164,6 +174,10 @@
   },
   "active": "7821bb5e15c0b173",
   "lastOpenFiles": [
+    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
+    "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
+    "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
+    "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
     "Unity Car Game/Unity Car Game.md",
     "VulkanGFX.wiki/Moduler systems using macros.md",
     "UnrealEngine/Unreal Keyboard ShorCuts.md",
@@ -171,11 +185,8 @@
     "UnrealEngine/BasicGames/Scene Compoent vs Actor Component.md",
     "UnrealEngine/BasicGames/Pasted image 20230928210228.png",
     "UnrealEngine/BasicGames/Debug Compoents UE.md",
-    "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
-    "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "Cpp stuff/Parallel and concurrent Programming/Parallel Programming.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-25 at 16.45.41.png",
-    "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.44.42.png",
     "BackEnd/LoadBalancers.md",
     "Cpp stuff/Parallel and concurrent Programming/Screenshot 2023-09-26 at 11.35.29.png",
@@ -204,7 +215,6 @@
     "Cpp stuff",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.36.22.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.13.48.png",
-    "().md",
     "Unity Car Game",
     "VulkanGFX.wiki",
     "UnrealEngine",

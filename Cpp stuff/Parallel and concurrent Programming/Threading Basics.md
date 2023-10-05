@@ -94,9 +94,32 @@ problem of starvation
 
 Assignments: 
 - State 
-- FCFS implementaion 
-- Shortest Job fist non pre-emptive vesrion 
-- Priority scedulring 
+- FCFS implementation 
+- Shortest Job fist non pre-emptive version 
+- Priority scheduling 
 	- FCFS 
 	- SRTF 
 [[Moar CPU Sceduling Algos]]
+
+
+
+```c++
+#include <thread> 
+#include <chrono> 
+
+using namespace std;
+
+bool chopping = true; 
+
+void veggieChopping(const char* name){
+	uint vegCount = 0; 
+	while(chopping){
+		vegCount++; 
+	}
+	cout<<" counted " << name << vegCount; 
+}
+
+thread::
+
+
+```
