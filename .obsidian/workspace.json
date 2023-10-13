@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
+                "file": "VulkanGFX.wiki/Home.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
+                "file": "VulkanGFX.wiki/Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
+                "file": "VulkanGFX.wiki/Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cpp stuff/Parallel and concurrent Programming/Sceduler.md"
+                "file": "VulkanGFX.wiki/Home.md"
               }
             }
           },
@@ -175,9 +174,9 @@
   },
   "active": "7821bb5e15c0b173",
   "lastOpenFiles": [
+    "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
     "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
     "Cpp stuff/Parallel and concurrent Programming/Thread and Process.md",
-    "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
     "Cpp stuff/Parallel and concurrent Programming/Memory Management.md",
     "Unity Car Game/Unity Car Game.md",
     "VulkanGFX.wiki/Moduler systems using macros.md",
