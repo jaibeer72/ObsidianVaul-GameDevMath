@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4d2cf2519a3877ce",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,7 +184,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7821bb5e15c0b173",
+  "active": "4d2cf2519a3877ce",
   "lastOpenFiles": [
     "VulkanGFX.wiki/Home.md",
     "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
