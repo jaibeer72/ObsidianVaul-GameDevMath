@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "DS ALgos/LLD and OOP.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "4d2cf2519a3877ce",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a07c23e02fa52c5f",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "DS ALgos/LLD and OOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rough Notes DWD.md",
+                "file": "DS ALgos/LLD and OOP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rough Notes DWD.md"
+                "file": "DS ALgos/LLD and OOP.md"
               }
             }
           },
@@ -170,8 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,8 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d2cf2519a3877ce",
+  "active": "7821bb5e15c0b173",
   "lastOpenFiles": [
+    "DS ALgos/LLD and OOP.md",
+    "Untitled.canvas",
+    "Rough Notes DWD.md",
     "VulkanGFX.wiki/Home.md",
     "Cpp stuff/Parallel and concurrent Programming/Sceduler.md",
     "Cpp stuff/Parallel and concurrent Programming/Threading Basics.md",
@@ -212,7 +202,6 @@
     "BackEnd",
     "DS ALgos/GCD.md",
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
-    "Rough Notes DWD.md",
     "Unity Car Game/Game Setup.md",
     "Unity Car Game/NavMesh.md",
     "Unity Car Game/Assets/Screenshot 2023-09-06 at 19.21.34.png",
@@ -223,7 +212,6 @@
     "UnrealEngine/BasicGames/Crypt Raider.md",
     "UnrealEngine/BasicGames",
     "DS ALgos/Modular Arithmetic..md",
-    "DS ALgos/Bit-Manipulation.md",
     "Cpp stuff",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.36.22.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.13.48.png",
@@ -231,7 +219,6 @@
     "VulkanGFX.wiki",
     "UnrealEngine",
     "VulkanDev/VulkanGFX.wiki",
-    "DS ALgos",
-    "Untitled.canvas"
+    "DS ALgos"
   ]
 }
