@@ -34,3 +34,19 @@ The world object is A UWorld Object
 Imagine you are playing with toy cars and other toys.
 
 - **`UWorld`**: Think of this as the big playmat or table where you place all your toys. This big playmat is like the world for your toys. It's where all your toys live and can move around. It knows about all your toys and what they are doing.
+
+#pounters #refrences 
+- Pointers can be reassinged refrences cannot be reassigned 
+- Pointers can be NULL but refrences cannot be null 
+
+
+#Syntax 
+ ```Cpp
+ Actor* actorPtr = new Actor();
+ basically See blwo 
+```
+
+![[Pasted image 20231025152129.png]]
+
+![[Pasted image 20231025152155.png]]
+
