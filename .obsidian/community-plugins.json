@@ -4,5 +4,7 @@
   "quick-latex",
   "execute-code",
   "obsidian-git",
-  "copilot"
+  "copilot",
+  "obsidian-vimrc-support",
+  "obsidian-relative-line-numbers"
 ]
