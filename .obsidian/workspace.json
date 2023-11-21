@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DS ALgos/Modular Arithmetic..md",
+                "file": "DS ALgos/Bit-Manipulation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DS ALgos/Modular Arithmetic..md",
+                "file": "DS ALgos/Bit-Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DS ALgos/Modular Arithmetic..md",
+                "file": "DS ALgos/Bit-Manipulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DS ALgos/Modular Arithmetic..md"
+                "file": "DS ALgos/Bit-Manipulation.md"
               }
             }
           },
@@ -173,10 +173,10 @@
   },
   "active": "c2589c33720064a4",
   "lastOpenFiles": [
+    "DS ALgos/Subsequence and sub-sets.md",
+    "DS ALgos/Modular Arithmetic..md",
     "DS ALgos/LLD and OOP.md",
     "DS ALgos/Bit-Manipulation.md",
-    "DS ALgos/Modular Arithmetic..md",
-    "DS ALgos/Subsequence and sub-sets.md",
     "Untitled.canvas",
     "Rough Notes DWD.md",
     "VulkanGFX.wiki/Home.md",
