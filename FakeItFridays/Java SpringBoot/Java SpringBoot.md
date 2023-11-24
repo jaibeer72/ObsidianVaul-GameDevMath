@@ -88,4 +88,4 @@ manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see
 
 yeah, wrote all this so i can remember the ./gradlew lmao ! XD 
 
-basically 
+basically intent -> response reaction 
