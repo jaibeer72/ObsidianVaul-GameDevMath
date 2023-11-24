@@ -71,3 +71,21 @@ In summary, the choice between Gradle and Maven often depends on the specific ne
 ## TODO : go over all the requests once again. 
 just go over all the rest api put updated get post. 
 
+
+
+## Tomcat. what is that ? 
+
+Open sourced implementation of java Servelet or sering. 
+manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see 
+
+
+
+| Command   | what it does | 
+|-------------|-------------|
+| ./gradlew bootRun | boots and runs the application | 
+| ./gradlew build | Builds it | 
+|./gradlew test | runs all test| 
+
+yeah, wrote all this so i can remember the ./gradlew lmao ! XD 
+
+basically 
