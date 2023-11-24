@@ -66,3 +66,8 @@ In summary, the choice between Gradle and Maven often depends on the specific ne
 
 # I swear we are about to stay on Web only stuff. 
 
+
+
+## TODO : go over all the requests once again. 
+just go over all the rest api put updated get post. 
+
