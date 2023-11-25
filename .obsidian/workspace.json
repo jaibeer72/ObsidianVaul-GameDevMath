@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
+                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
+                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
+                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md"
+                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md"
               }
             }
           },
@@ -186,8 +186,9 @@
   },
   "active": "3222211cbe59aa3c",
   "lastOpenFiles": [
-    "DS ALgos/Bit-Manipulation.md",
     "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
+    "FakeItFridays/Java SpringBoot/Dependency injection.md",
+    "DS ALgos/Bit-Manipulation.md",
     "FakeItFridays/Java SpringBoot",
     "FakeItFridays",
     "DS ALgos/Subsequence and sub-sets.md",
@@ -221,7 +222,6 @@
     "BackEnd",
     "DS ALgos/GCD.md",
     "VulkanGFX.wiki/1 - Instance and physical device selection.md",
-    "Unity Car Game/Game Setup.md",
     "Unity Car Game/Assets/Screenshot 2023-09-06 at 19.21.34.png",
     "Unity Car Game/Assets/Screenshot 2023-09-07 at 14.37.38.png",
     "Unity Car Game/Assets",
