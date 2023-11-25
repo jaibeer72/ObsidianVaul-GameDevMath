@@ -89,3 +89,8 @@ manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see
 yeah, wrote all this so i can remember the ./gradlew lmao ! XD 
 
 basically intent -> response reaction 
+
+
+# what is happeing inside the server 
+
+- MVC architecture in a sever kinda makes sense 
