@@ -89,8 +89,8 @@ manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see
 
 
 also use ```--continuous```  for running on changes lol 
+to refrense dependencues  ```./gradlew --refresh-dependencies```
 
-```
 
 vs config for the debug 
 ```json

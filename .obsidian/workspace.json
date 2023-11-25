@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
+                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
+                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md",
+                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FakeItFridays/Java SpringBoot/Dependency injection.md"
+                "file": "FakeItFridays/Java SpringBoot/Java SpringBoot.md"
               }
             }
           },
@@ -186,8 +186,8 @@
   },
   "active": "3222211cbe59aa3c",
   "lastOpenFiles": [
-    "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
     "FakeItFridays/Java SpringBoot/Dependency injection.md",
+    "FakeItFridays/Java SpringBoot/Java SpringBoot.md",
     "DS ALgos/Bit-Manipulation.md",
     "FakeItFridays/Java SpringBoot",
     "FakeItFridays",
