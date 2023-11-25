@@ -87,6 +87,11 @@ manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see
 |./gradlew test | runs all test| 
 |./gradlew bootRun --debug-jvm | run in debug mode launches in port 5005|
 
+
+also use ```--continuous```  for running on changes lol 
+
+```
+
 vs config for the debug 
 ```json
   {
