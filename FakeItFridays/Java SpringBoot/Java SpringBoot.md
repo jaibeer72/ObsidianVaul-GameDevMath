@@ -85,6 +85,19 @@ manages WebSockits and stuff and ahs supprot for JavaBeans. we shall see
 | ./gradlew bootRun | boots and runs the application | 
 | ./gradlew build | Builds it | 
 |./gradlew test | runs all test| 
+|./gradlew bootRun --debug-jvm | run in debug mode launches in port 5005|
+
+vs config for the debug 
+```json
+  {
+                "type": "java",
+                "name": "Debug (Attach)-DemoApplication remote",
+                "request": "attach",
+                "hostName": "localhost",
+                "port": 5005
+          } 
+```
+
 
 yeah, wrote all this so i can remember the ./gradlew lmao ! XD 
 
