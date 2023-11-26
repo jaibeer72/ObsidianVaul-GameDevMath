@@ -112,3 +112,13 @@ basically intent -> response reaction
 # what is happeing inside the server 
 
 - MVC architecture in a sever kinda makes sense 
+
+A DTO, or Data Transfer Object, is a design pattern used in software development to transfer data between different parts of a software application.
+
+DTOs are simple objects that only contain fields to store data, along with getters and setters for these fields. They do not contain any business logic.
+
+They are typically used to transfer data over the network or between different layers of an application, such as from the service layer to the presentation layer.
+
+In the context of your Java code, a DTO for the `Task` class might look like this:
+
+# Reflections 
